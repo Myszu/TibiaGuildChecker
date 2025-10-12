@@ -99,7 +99,7 @@ if __name__ == "__main__":
         for member in pb(MEMBERS, 0, len(MEMBERS)):
             member = investigate_member(member)
             today = datetime.now().date()
-            file_path = f'./{cfg.GUILD}_{today.strftime("%d%m%Y")}.csv'
+            file_path = f'./output/{cfg.GUILD}_{today.strftime("%d%m%Y")}.csv'
             save_to_file(file_path)
         print(f'All done, created file {file_path}!')
     else:
